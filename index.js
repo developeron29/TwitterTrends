@@ -19,6 +19,7 @@ var gender = require('gender')
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'dist')));
+app.set('port', process.env.PORT || 3000);
 
 app.get('/', function(req, res){
    // res.sendFile(path.join(__dirname, 'dist/index.html'));
@@ -78,6 +79,7 @@ io.on('connection', function(socket){
                     });
 
                     stream.on('error', function( error ) {
+                        console.log(error);
                         throw error;
                     });
                     // Close stream, after 20 seconds
@@ -97,6 +99,6 @@ io.on('connection', function(socket){
     });
 });
 
-http.listen(3000, function(){
+http.listen(app.get('port'), function(){
     console.log('listening on *:3000');
 });
