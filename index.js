@@ -85,7 +85,7 @@ io.on('connection', function(socket){
                     // Close stream, after 20 seconds
                     setTimeout(function() {
                         stream.destroy();
-                    }, 20000);
+                    }, 50000);
                 });
 
                 
