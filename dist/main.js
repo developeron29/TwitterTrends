@@ -82,9 +82,9 @@ var AppComponent = /** @class */ (function () {
         this.gradient = false;
         this.showLegend = true;
         this.showXAxisLabel = true;
-        this.xAxisLabel = 'Country';
+        this.xAxisLabel = 'Sentiment';
         this.showYAxisLabel = true;
-        this.yAxisLabel = 'Population';
+        this.yAxisLabel = 'Score';
         this.colorScheme = {
             domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
         };
