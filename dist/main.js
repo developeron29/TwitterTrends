@@ -211,7 +211,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var config = { url: 'localhost:3000', options: {} };
+var config = { url: 'localhost:50412', options: {} };
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
