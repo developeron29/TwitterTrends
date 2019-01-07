@@ -1,0 +1,19 @@
+{
+  "name": "tweet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.15.2",
+    "gender": "0.0.1",
+    "sentiment": "^5.0.1",
+    "socket.io": "^2.2.0",
+    "twitter": "^1.7.1"
+  }
+}
