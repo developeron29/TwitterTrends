@@ -28,7 +28,7 @@ app.get('/', function(req, res){
 
 io.on('connection', function(socket){
     console.log('a user connected');
-  //  socket.emit("test", "test");
+    // Listen to message from client
     socket.on('message', function(msg) {
         console.log('message received', msg);
         socket.emit('message', {
@@ -82,7 +82,7 @@ io.on('connection', function(socket){
                         console.log(error);
                         throw error;
                     });
-                    // Close stream, after 20 seconds
+                    // Close stream, after 50 seconds
                     setTimeout(function() {
                         stream.destroy();
                     }, 50000);
