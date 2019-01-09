@@ -6,10 +6,10 @@ var bodyParser = require('body-parser');
 var path = require('path');
 var Twitter = require('twitter');
 var client = new Twitter({
-    consumer_key: 'yGO7zVxmfjFIyBYmTrKeXvH7l',
-    consumer_secret: 'X5P2qh5yGK9lIxveMfZpWFxrobn4jkRlZZd0FARc8vmrdH24NF',
-    access_token_key: '1035408562929852417-IeU9wmnqA0t9sq32IbCQ4JqHhRHJXr',
-    access_token_secret: 'XMjrfRKOUtJDtlwmHPKkBkaVQOYUt3EU8hp5yJCWcfSw0'
+    consumer_key: '',
+    consumer_secret: '',
+    access_token_key: '',
+    access_token_secret: ''
 });
 var Sentiment = require('sentiment');
 var sentiment = new Sentiment();
